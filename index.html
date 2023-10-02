@@ -1,15 +1,93 @@
-<form action="https://formsubmit.co/0c0c6cfaed47dea8d6e10e3f346e38a1" method="POST">
-		<label for="name">Name:</label>
-				<input type="text" id="name" name="name" required><br><br>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Submit Form</title>
+    <style>
+        body {
+            background-color: #fff; /* White background */
+            color: #000; /* Black text */
+            font-family: Arial, sans-serif;
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+        }
 
-				<label for="email">Email:</label>
-				<input type="email" id="email" name="email" required><br><br>
+        .header {
+            background-color: #000; /* Black background */
+            padding: 20px;
+            text-align: left;
+        }
 
-				<label for="script_name">Script name:</label>
-				<input type="text" id="script_name" name="script_name" required><br><br>
+        .header img {
+            vertical-align: middle;
+        }
 
-				<label for="comments">Comments:</label><br>
-				<textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
-				<button type="submit">Submit</button>
+        .header h1 {
+            display: inline;
+            margin-left: 10px;
+            color: #fff; /* White text */
+        }
 
-</form>
+        .container {
+            max-width: 400px;
+            margin: 0;
+            padding: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #000; /* Black border */
+            background-color: #fff; /* White background */
+            color: #000; /* Black text */
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button[type="submit"] {
+            padding: 10px 20px;
+            background-color: #000; /* Black background */
+            color: #fff; /* White text */
+            border: none;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #333; /* Dark gray on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="Jacobs_logo.jpg" alt="Icon" width="65" height="65">
+        <h1>Submit Form</h1>
+    </div>
+    <div class="container">
+        <form action="https://formsubmit.co/0c0c6cfaed47dea8d6e10e3f346e38a1" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="script_name">Script name:</label>
+            <input type="text" id="script_name" name="script_name" required><br><br>
+
+            <label for="comments">Comments:</label><br>
+            <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
